@@ -1,0 +1,10 @@
+[
+    {
+        "secret": "HOOK_SECRET",
+        "repo": "REPO_NAMESPACE (Example: TheTetrabyte/git-hook)",
+        "discord": ["DISCORD_WEBHOOK OR MULTIPLE SEPERATED BY COMMAS"],
+        "events": {
+            "push": true
+        }
+    }
+]

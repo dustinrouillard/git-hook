@@ -1,0 +1,8 @@
+# EN/Config
+config.json
+.env
+.env.dev
+.env.prod
+
+# Binaries
+debug
