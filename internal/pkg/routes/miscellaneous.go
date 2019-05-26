@@ -2,7 +2,7 @@ package routes
 
 import "net/http"
 
-// PingRoute used as a handler func will send back a json object to the client
+// Ping used as a handler func will send back a json object to the client
 func Ping(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)

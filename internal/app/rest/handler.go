@@ -11,7 +11,7 @@ import (
 	"github.com/go-chi/chi"
 )
 
-// InitializeHttp will initialize the http server and setup the routes
+// Initialize will initialize the http server and setup the routes
 func Initialize() {
 	// Create New Router
 	Router := chi.NewRouter()

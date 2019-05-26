@@ -73,7 +73,7 @@ type Config struct {
 	URL         string `json:"url"`
 }
 
-// LastResponse is the last repsonse data from the hook payload
+// LastResponse is the last response data from the hook payload
 type LastResponse struct {
 	Code    interface{} `json:"code"`
 	Status  string      `json:"status"`

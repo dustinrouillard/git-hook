@@ -44,11 +44,11 @@ func PingHandler(w http.ResponseWriter, r *http.Request) {
 	if configErr != nil {
 		switch configErr.Error() {
 		case "not_found":
-			utilities.DefaultResponse("respository_not_supported", "Repository not supported", 400, w)
+			utilities.DefaultResponse("repository_not_supported", "Repository not supported", 400, w)
 			break
 		default:
 			log.Println("Error getting config for repo", configErr)
-			utilities.DefaultResponse("respository_not_supported", "Repository not supported", 400, w)
+			utilities.DefaultResponse("repository_not_supported", "Repository not supported", 400, w)
 			break
 		}
 
@@ -110,11 +110,11 @@ func PushHandler(w http.ResponseWriter, r *http.Request) {
 	if configErr != nil {
 		switch configErr.Error() {
 		case "not_found":
-			utilities.DefaultResponse("respository_not_supported", "Repository not supported", 400, w)
+			utilities.DefaultResponse("repository_not_supported", "Repository not supported", 400, w)
 			break
 		default:
 			log.Println("Error getting config for repo", configErr)
-			utilities.DefaultResponse("respository_not_supported", "Repository not supported", 400, w)
+			utilities.DefaultResponse("repository_not_supported", "Repository not supported", 400, w)
 			break
 		}
 

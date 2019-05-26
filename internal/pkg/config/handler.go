@@ -25,7 +25,7 @@ func InitializeEnv() {
 	configenv = EnvConfig{}
 
 	if err := envconfig.Process("app", &configenv); err != nil {
-		log.Println("Error trying to parse the env file, continuting anyway", err)
+		log.Println("Error trying to parse the env file, continuing anyway", err)
 	}
 
 	log.Println("CONFIG > ENV Initialized")

@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// DefaultResponsePayload is the default response json structure
 type DefaultResponsePayload struct {
 	Code    string `json:"code"`
 	Message string `json:"message"`
